@@ -1,9 +1,9 @@
 import pdfkit
 options = {
     'page-size': 'A4',
-    'margin-top': '0.75in',
+    'margin-top': '0.05in',
     'margin-right': '0.75in',
-    'margin-bottom': '0.75in',
+    'margin-bottom': '0.05in',
     'margin-left': '0.75in',
     'encoding': "UTF-8",
     'custom-header': [
@@ -16,4 +16,4 @@ options = {
     'no-outline': None
 }
 
-pdfkit.from_file('free_resume.html', '简历.pdf')
+pdfkit.from_file('free_resume.html', 'resume.pdf', options=options)
